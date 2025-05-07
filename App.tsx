@@ -7,10 +7,15 @@ import { Loading } from '@components/Loading';
 import theme from '@theme/index';
 
 import { Groups } from '@screens/Groups';
+import { Tela2 } from '@screens/Tela2'
+import Tela3 from '@screens/Tela3';
 
 export default function App() {
   const [fontsLoaded] = useFonts({Poppins_400Regular, Poppins_700Bold });
 
+  //{fontsLoaded ? <Tela2 /> : <Loading /> }
+  //console.log('Cores do tema:', theme.COLORS);
+  //console.log('Fontes carregadas:', fontsLoaded);
 
   return (
     <ThemeProvider theme={theme}>
@@ -20,7 +25,12 @@ export default function App() {
         translucent
       />
 
-      {fontsLoaded ? <Groups /> : <Loading /> }
+       <Tela3 />
+       
     </ThemeProvider>
   );
 }
+
+/*
+{fontsLoaded ? <Tela2 /> : <Loading /> }
+*/

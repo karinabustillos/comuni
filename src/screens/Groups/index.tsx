@@ -6,7 +6,7 @@ export function Groups() {
   return (
     <Container>
       <Logo source={logoImg} />
-
+      
     </Container>
   );
 }

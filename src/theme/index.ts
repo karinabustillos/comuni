@@ -41,7 +41,7 @@ export default {
     },
     FONT_FAMILY: {
         REGULAR: 'Poppins_400Regular',
-        BOLD: 'Poppins_700Bold '
+        BOLD: 'Poppins_700Bold'
     },
     FONT_SIZE: {
         SM: 14,
