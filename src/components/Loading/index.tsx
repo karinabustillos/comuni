@@ -1,6 +1,8 @@
-import { Container, LoadIndicator } from './styles';
+import React from 'react';
+import { Container, LoadIndicator } from "./styles";
 
-export function Loading() {
+
+export default function Loading() {
   return (
     <Container>
       <LoadIndicator />
