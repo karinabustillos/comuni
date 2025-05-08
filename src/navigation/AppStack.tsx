@@ -24,19 +24,30 @@ export function AppStack() {
 }*/
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import LogInScreen from '@screens/LogInScreen';
+import  ResetPasswordScreen from '@screens/ResetPasswordScreen';
+import SignInScreen from '@screens/SignInScreen';
 import { MainTabNavigator } from './MainTab';
 import { AppStackParamList } from './types';
+import { useAuth } from 'src/hooks/useAuth';
 
 const Stack = createNativeStackNavigator<AppStackParamList>();
 
 export function AppStack() {
+
+  const { user } = useAuth();
+
+
   return (
     <Stack.Navigator
-      initialRouteName="Main"
+      initialRouteName={user ? 'Main' : 'SignInScreen'} //"Main"
       screenOptions={{
         headerShown: false,
       }}
     > 
+      <Stack.Screen name="SignInScreen" component={SignInScreen} />
+      <Stack.Screen name="LogInScreen" component={LogInScreen} />
+      <Stack.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
       <Stack.Screen name="Main" component={MainTabNavigator} />
     </Stack.Navigator>
   );

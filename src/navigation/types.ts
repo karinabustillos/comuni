@@ -1,7 +1,10 @@
 export type AppStackParamList = {
-    Onboarding: undefined;
-    Cadastro: undefined;
-    Login: undefined;
+   // Onboarding: undefined;
+    //Cadastro: undefined;
+    //Login: undefined;
+    LogInScreen: undefined; 
+    ResetPasswordScreen: undefined;
+    SignInScreen: undefined;
     Main: undefined;
   };
   
@@ -12,5 +15,5 @@ export type AppStackParamList = {
     Profile: undefined;
   };
   
-  export type RootStackParamList = AppStackParamList & MainTabParamList;
+ // export type RootStackParamList = AppStackParamList & MainTabParamList;
 
