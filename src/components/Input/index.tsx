@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { 
+  forwardRef,
+  useRef,
+  useState,
+  useEffect,
+  useCallback,
+  useImperativeHandle,
+} from 'react';
+
 import { TextInputProps } from 'react-native';
 
 import { Container, InputContent, Title } from './styles';
 
 type InputProps = TextInputProps & {
-    text: string;
+    text?: string;
 };
 
 export default function Input({ text, ...rest }: InputProps) {
