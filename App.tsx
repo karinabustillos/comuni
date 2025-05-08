@@ -7,7 +7,7 @@ import Loading from '@components/Loading';
 
 import theme from '@theme/index';
 
-import NewGroups from '@screens/NewGroups';
+import ResetPasswordScreen from '@screens/ResetPasswordScreen'
 
 export default function App() {
   const [fontsLoaded] = useFonts({Poppins_400Regular, Poppins_700Bold });
@@ -21,7 +21,7 @@ export default function App() {
         translucent
       />
 
-      {fontsLoaded ? <NewGroups /> : <Loading /> }
+      {fontsLoaded ? <ResetPasswordScreen /> : <Loading /> }
     </ThemeProvider>
   );
 }
