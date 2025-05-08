@@ -1,12 +1,13 @@
+import React from 'react';
 import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components';
 import { useFonts, Poppins_400Regular, Poppins_700Bold } from '@expo-google-fonts/poppins';
 
-import { Loading } from '@components/Loading';
+import Loading from '@components/Loading';
 
 import theme from '@theme/index';
 
-import { Groups } from '@screens/Groups';
+import NewGroups from '@screens/NewGroups';
 
 export default function App() {
   const [fontsLoaded] = useFonts({Poppins_400Regular, Poppins_700Bold });
@@ -20,7 +21,7 @@ export default function App() {
         translucent
       />
 
-      {fontsLoaded ? <Groups /> : <Loading /> }
+      {fontsLoaded ? <NewGroups /> : <Loading /> }
     </ThemeProvider>
   );
 }
