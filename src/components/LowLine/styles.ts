@@ -17,6 +17,7 @@ export const TextBase = styled.Text `
     font-size: ${({ theme }) => theme.FONT_SIZE.SM}px;
     font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 
+    text-align: center;
     color: ${({ theme }) => theme.COLORS.WHITE};
 `;
 
