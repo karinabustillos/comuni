@@ -9,7 +9,7 @@ export const Title = styled.Text`
         font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
         font-size: ${({ theme }) => theme.FONT_SIZE.SM}px;
 
-        margin: 0 0 20px 20px;
+        margin: 0 20px 20px;
         color: ${({ theme }) => theme.COLORS.WHITE};
 `;
 
@@ -27,10 +27,3 @@ export const InputContent = styled(TextInput)`
     font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
     font-size: ${({ theme }) => theme.FONT_SIZE.SM}px;
 `;
-
-
-// export const Container = styled.View``;
-
-// export const Title = styled.Text``;
-
-// export const TextInput = styled.TextInput``;
