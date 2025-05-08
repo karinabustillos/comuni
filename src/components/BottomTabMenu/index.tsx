@@ -1,4 +1,6 @@
-import { Container, TabButton, TabText } from './styles';
+//EXEMPLO
+
+/*import { Container, TabButton, TabText } from './styles';
 import { useNavigation } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons'; // Importa os ícones
 
@@ -29,3 +31,4 @@ export function BottomTabMenu() {
     </Container>
   );
 }
+*/

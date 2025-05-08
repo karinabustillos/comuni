@@ -1,4 +1,6 @@
-import styled from "styled-components/native";
+//EXEMPLO
+
+/*import styled from "styled-components/native";
 
 export const Container = styled.View`
     flex-direction: row;   
@@ -19,4 +21,4 @@ export const TabText = styled.Text`
   font-size: 12px;
   color: ${({ theme }) => theme.COLORS.GRAY_700};
   margin-top: 4px;
-`;
+`;*/
