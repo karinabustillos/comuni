@@ -50,6 +50,8 @@ export function AppStack() {
       <Stack.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
       <Stack.Screen name="Main" component={MainTabNavigator} />
     </Stack.Navigator>
+
+    
   );
 }
 

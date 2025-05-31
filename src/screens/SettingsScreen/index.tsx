@@ -1,21 +1,12 @@
 import { useState } from 'react';
 import { Alert } from 'react-native';
-import { 
-  User, 
-  Bell, 
-  Moon, 
-  Lock, 
-  Question, 
-  CaretRight, 
-  ToggleLeft, 
-  ToggleRight 
-} from 'phosphor-react-native';
+import { User, Bell, Moon, Lock, Question, CaretRight, ToggleLeft, ToggleRight } from 'phosphor-react-native';
 import { Container, Header, UserInfo, Avatar, UserName, UserEmail, SettingsSection, SectionTitle, Option, OptionText, OptionIcon, LogoutButton, LogoutButtonText, VersionText } from './styles';
 
-import logoImg from '@assets/pre-logo.png';
+import userImg from '@assets/user-pfp.webp';
 //import { useAuth } from '@hooks/auth';
 
-export function Profile() {
+export function SettingsScreen() {
  // const { user, signOut } = useAuth();
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [darkModeEnabled, setDarkModeEnabled] = useState(false);
@@ -41,7 +32,7 @@ export function Profile() {
     <Container>
       <Header>
         <UserInfo>
-          <Avatar 
+          <Avatar source= {userImg}
          //   source={user.avatar ? { uri: user.avatar } : avatarPlaceholder}
           />
           <UserName>Usuário{}</UserName>

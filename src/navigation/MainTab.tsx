@@ -1,10 +1,10 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Tela1 } from '../screens/Tela1';
-import { Tela2 } from '../screens/Tela2';
-import Tela3 from '../screens/Tela3';
-import { Profile } from '../screens/Profile';
+import { Home } from '../screens/Home';
+import { ExploreScreen } from '../screens/ExploreScreen';
+import { SettingsScreen } from '../screens/SettingsScreen';
 import { House, List, MapPin, User } from 'phosphor-react-native';
 import { MainTabParamList } from './types';
+import { ActivityStackNavigator } from './ActivityStack';
 
 const Tab = createBottomTabNavigator<MainTabParamList>();
 
@@ -15,19 +15,19 @@ export function MainTabNavigator() {
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             switch (route.name) {
-              case 'Tela1':
+              case 'Home':
                 return <House size={size} color={color} weight={focused ? "fill" : "regular"} />;
-              case 'Tela2':
+              case 'Explore':
                 return <List size={size} color={color} weight={focused ? "fill" : "regular"} />;
-              case 'Tela3':
+              case 'Atividades':
                 return <MapPin size={size} color={color} weight={focused ? "fill" : "regular"} />;
-              case 'Profile':
+              case 'Configurações':
                 return <User size={size} color={color} weight={focused ? "fill" : "regular"} />;
               default:
                 return <House size={size} color={color} />;
             }
           },
-          tabBarActiveTintColor: '#4F959D',
+          tabBarActiveTintColor: '#205781',
           tabBarInactiveTintColor: 'gray',
           tabBarStyle: {
             backgroundColor: '#FFFFFF',
@@ -39,10 +39,10 @@ export function MainTabNavigator() {
           headerShown: false,
         })}
       >
-        <Tab.Screen name="Tela1" component={Tela1} />
-        <Tab.Screen name="Tela2" component={Tela2} />
-        <Tab.Screen name="Tela3" component={Tela3} />
-        <Tab.Screen name="Profile" component={Profile} />
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Explore" component={ExploreScreen} />
+        <Tab.Screen name="Atividades" component={ActivityStackNavigator} />
+        <Tab.Screen name="Configurações" component={SettingsScreen} />
       </Tab.Navigator>
-    );
+    ); 
   }

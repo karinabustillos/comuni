@@ -5,8 +5,8 @@ const { width } = Dimensions.get('window');
 export const styles = StyleSheet.create({
   mapWrapper: {
     width: width * 0.9,
-    aspectRatio: 1.1,
-    borderRadius: 16,
+    aspectRatio: 1.7,
+    borderRadius: 20,
     overflow: 'hidden',
     borderWidth: 4,
     borderColor: '#98D2C0',
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 6,
     elevation: 8,
-    marginTop: 80, 
+    marginTop: 10, 
   },
   map: {
     flex: 1,

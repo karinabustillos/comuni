@@ -9,11 +9,17 @@ export type AppStackParamList = {
   };
   
   export type MainTabParamList = {
-    Tela1: undefined;
-    Tela2: undefined;
-    Tela3: undefined;
-    Profile: undefined;
+    Home: undefined;
+    Explore: undefined;
+    Atividades: undefined;
+    Configurações: undefined;
   };
+
+  export type ActivityStackParamList = {
+    ActivityScreen: undefined;
+    CreateActivityScreen: undefined;
+};
   
  // export type RootStackParamList = AppStackParamList & MainTabParamList;
 
+ 

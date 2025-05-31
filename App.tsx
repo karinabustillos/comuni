@@ -2,16 +2,13 @@ import { StatusBar } from 'react-native';
 import { Routes } from './src/navigation';
 
 
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
 import { useFonts, Poppins_400Regular, Poppins_700Bold } from '@expo-google-fonts/poppins';
 
 import { Loading } from '@components/Loading';
 
 import theme from '@theme/index';
 
-import { Groups } from '@screens/Groups';
-import { Tela2 } from '@screens/Tela2'
-import Tela3 from '@screens/Tela3';
 
 export default function App() {
   const [fontsLoaded] = useFonts({Poppins_400Regular, Poppins_700Bold });

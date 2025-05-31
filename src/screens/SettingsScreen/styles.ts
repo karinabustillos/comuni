@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.ScrollView`
-
      flex: 1;
      width: 100%;
      background-color: ${({ theme }) => theme.COLORS.WHITE};
@@ -11,7 +10,7 @@ export const Header = styled.View`
      width: 100%;
      align-items: center;
      padding: 32px 24px 24px;
-     background-color: ${({ theme }) => theme.COLORS.GREEN_700}; 
+     background-color: ${({ theme }) => theme.COLORS.BLUE_300};
 `;
 
 export const UserInfo = styled.View`
@@ -22,23 +21,23 @@ export const Avatar = styled.Image`
      width: 120px;
      height: 120px;
      border-radius: 60px;
-     border-width: 3px;
-     border-color: ${({ theme }) => theme.COLORS.WHITE};
+     //border-width: 3px;
+     //border-color: ${({ theme }) => theme.COLORS.BLUE};
      margin-bottom: 16px;
 `;
 
 export const UserName = styled.Text`
-     font-size: 24px;
+     font-size: ${({ theme }) => theme.FONT_SIZE.XL}px;
      font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD}; 
-     color: ${({ theme }) => theme.COLORS.WHITE}; 
-     margin-bottom: 4px;
+     color: ${({ theme }) => theme.COLORS.BLUE}; 
+     margin-bottom: 4px;     
 `;
 
 export const UserEmail = styled.Text`
-     font-size: 16px;
+     font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
      font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR}; 
-     color: ${({ theme }) => theme.COLORS.WHITE}; 
-     opacity: 0.9;
+     color: ${({ theme }) => theme.COLORS.BLUE}; 
+     opacity: 0.8;
 `;
 
 export const SettingsSection = styled.View`
@@ -48,7 +47,7 @@ export const SettingsSection = styled.View`
 `;
 
 export const SectionTitle = styled.Text`
-     font-size: 18px;
+     font-size: ${({ theme }) => theme.FONT_SIZE.LG}px;
      font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD}; 
      color: ${({ theme }) => theme.COLORS.BLUE}; 
      margin-bottom: 16px;
@@ -65,26 +64,26 @@ export const Option = styled.TouchableOpacity`
 
 export const OptionText = styled.Text`
      flex: 1;
-     font-size: 16px;
+     font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
      font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR}; 
      color: ${({ theme }) => theme.COLORS.BLUE}; 
      margin-left: 16px;
 `;
 
 export const OptionIcon = styled.View`
-     font-size: 20px;
+     font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
      color: ${({ theme }) => theme.COLORS.BLUE}; 
 `;
 
 export const LogoutButton = styled.TouchableOpacity`
-     width: 90%;
+     width: 60%;
      align-self: center;
      align-items: center;
      justify-content: center;
-     padding: 16px;
+     padding: 20px;
      margin: 24px 0;
-     border-radius: 8px;
-     background-color: ${({ theme }) => theme.COLORS.GREEN_700}; 
+     border-radius: 20px;
+     background-color: ${({ theme }) => theme.COLORS.BLUE_500}; 
 `;
 
 export const LogoutButtonText = styled.Text`
