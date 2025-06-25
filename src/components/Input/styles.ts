@@ -18,7 +18,7 @@ export const InputContent = styled(TextInput)`
     min-height: 56px;
 
     background-color: ${({ theme }) => theme.COLORS.WHITE};
-    color: ${({ theme }) => theme.COLORS.AQUA};
+    color: ${({ theme }) => theme.COLORS.BLUE};
 
     border-radius: 6px;
     padding: 16px;

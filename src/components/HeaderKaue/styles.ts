@@ -25,6 +25,6 @@ export const TextHeader = styled.Text`
 `;
 
 export const IconHeader = styled(ArrowLeft).attrs(({ theme }) => ({
-    size: theme.FONT_SIZE.XL,
+    size: theme.FONT_SIZE.XLL,
     color: theme.COLORS.BLUE
 }))``;

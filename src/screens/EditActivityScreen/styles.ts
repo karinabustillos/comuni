@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { Platform } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -40,7 +41,7 @@ export const Input = styled.TextInput`
   padding: ${16}; /* Interpolação numérica */
 `;
 
-export const SelectButton = styled.Vew`
+export const SelectButton = styled.View` /* Corrigido de SelectVew para SelectButton */
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +65,7 @@ export const DescriptionInput = styled.TextInput`
 `;
 
 export const SubmitButton = styled.TouchableOpacity`
-  width: ${60}%; /* Interpolação numérica para porcentagem também */
+  width: ${60}%;
   align-self: center;
   margin-top: ${32}; /* Interpolação numérica */
   background-color: ${({ theme }) => theme.COLORS.BLUE};

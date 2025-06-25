@@ -17,6 +17,7 @@ export const Container2 = styled.View`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 5px;
 `;
 
 export const LinkButton = styled.TouchableOpacity``;

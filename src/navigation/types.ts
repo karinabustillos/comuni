@@ -5,6 +5,9 @@ export type AppStackParamList = {
     LogInScreen: undefined; 
     ResetPasswordScreen: undefined;
     SignInScreen: undefined;
+    //YourEventsScreen: undefined;
+    //EventDetail: { eventId: string };
+    ActivityDetailScreen: { eventId: string }; 
     Main: undefined;
   };
   
@@ -18,6 +21,10 @@ export type AppStackParamList = {
   export type ActivityStackParamList = {
     ActivityScreen: undefined;
     CreateActivityScreen: undefined;
+    //YourEventsScreen: undefined;
+    //EventDetail: { eventId: string };
+    ActivityDetailScreen: { eventId: string };
+    EditActivityScreen: { eventId: string};
 };
   
  // export type RootStackParamList = AppStackParamList & MainTabParamList;

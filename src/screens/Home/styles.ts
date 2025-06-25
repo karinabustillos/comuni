@@ -33,7 +33,7 @@ export const SubTitle = styled.Text`
      text-align: left;
 `;
 
-export const Card = styled.View`
+export const Card = styled.TouchableOpacity`
      width: 100%;
      background-color: ${({ theme }) => theme.COLORS.GRAY};
      padding: 20px 20px;

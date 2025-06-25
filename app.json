@@ -4,11 +4,11 @@
     "slug": "comuni",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/logo-comuni.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./src/assets/logo-comuni.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,15 +17,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/logo-comuni.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.karinabustillos.comuni"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./src/assets/logo-comuni.png"
     },
     "extra": {
+      "plugins": [
+        "@react-native-firebase/app",
+        "@react-native-firebase/auth",
+        "@react-native-firebase/firestore"
+      ],
+
       "eas": {
         "projectId": "73919fc2-0541-4c7d-bc1b-f4f64ba0cf4b"
       }
